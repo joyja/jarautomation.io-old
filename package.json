@@ -8,6 +8,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "@nuxt/content": "^2.2.2",
+    "@nuxt/image-edge": "1.0.0-27809804.194d2d6",
+    "@nuxtjs/google-fonts": "v3.0.0-1",
+    "@pinia/nuxt": "^0.4.5",
+    "nuxt": "3.0.0",
+    "sass": "^1.56.1"
   }
 }
