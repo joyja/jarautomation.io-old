@@ -1,0 +1,40 @@
+$breakpoint-sm:	640px;
+$breakpoint-md:	768px;
+$breakpoint-lg:	1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Small devices
+@mixin bpsm {
+  @media (min-width: #{$breakpoint-sm}) {
+      @content;
+  }
+}
+ 
+// Medium devices
+@mixin bpmd {
+  @media (min-width: #{$breakpoint-md}) {
+      @content;
+  }
+}
+ 
+// Large devices
+@mixin bplg {
+  @media (min-width: #{$breakpoint-lg}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin bpxl {
+  @media (min-width: #{$breakpoint-xl}) {
+      @content;
+  }
+}
+
+// Double Extra large devices
+@mixin bp2xl {
+  @media (min-width: #{$breakpoint-2xl}) {
+      @content;
+  }
+}
