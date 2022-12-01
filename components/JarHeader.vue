@@ -1,21 +1,35 @@
 <template>
   <nav class="header">
-    <div>
-      <Jar3dLogo />
+    <NuxtLink to="/">
+      <Jar3dLogo class="logo"/>
       <p class="logo__text">Automation</p>
-    </div>
+    </NuxtLink>
   </nav>
 </template>
 
 <style lang="scss">
+@import '~/assets/css/breakpoints.scss';
+
+.logo {
+  transition: height .3s ease-out;
+  height: 60px;
+  @include bpmd {
+    height:100px;
+  }
+}
 .logo__text {
-  font-size: 2rem;
+  transition: font-size .3s ease-out;
+  font-size: 1rem;
   font-family: Lobster;
   color: var(--neutral-300);
   transform: rotate(-3deg) translateY(-0.25rem) translateX(0.5rem);
   transform-origin: left;
+  @include bpmd {
+    font-size: 2rem;
+  }
 }
 .header {
-  padding: calc(var(--spacing-unit)*3)
+  padding: calc(var(--spacing-unit)*3);
+  height: 60px;
 }
 </style>

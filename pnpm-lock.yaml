@@ -5,8 +5,12 @@ specifiers:
   '@nuxt/image-edge': 1.0.0-27809804.194d2d6
   '@nuxtjs/google-fonts': v3.0.0-1
   '@pinia/nuxt': ^0.4.5
+  gsap: ^3.11.3
   nuxt: 3.0.0
   sass: ^1.56.1
+
+dependencies:
+  gsap: 3.11.3
 
 devDependencies:
   '@nuxt/content': 2.2.2
@@ -2562,6 +2566,10 @@ packages:
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
+
+  /gsap/3.11.3:
+    resolution: {integrity: sha512-xc/iIJy+LWiMbRa4IdMtdnnKa/7PXEK6NNzV71gdOYUVeTZN7UWnLU0fB7Hi1iwiz4ZZoYkBZPPYGg+2+zzFHA==}
+    dev: false
 
   /gzip-size/7.0.0:
     resolution: {integrity: sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA==}

@@ -1,73 +1,19 @@
-@import '~/assets/css/textSizes.scss';
+@import '~/assets/css/preflight.scss';
+@import '~/assets/css/text.scss';
+@import '~/assets/css/code.scss';
 @import '~/assets/css/boxShadow.scss';
 @import '~/assets/css/breakpoints.scss';
 @import '~/assets/css/palette.scss';
 // @import '~/assets/css/form.scss';
 
-
-* {
-  margin: 0px;
-  padding: 0px;
-  @extend .font-sans;
+.page-enter-active,
+.page-leave-active {
+  transition: all .3s;
 }
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-[multiple], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  border-color: #6b7280;
-  border-width: 1px;
-  border-radius: 0;
-  padding-top: 0.5rem;
-  padding-right: 0.75rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-[type=checkbox], [type=radio] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  print-color-adjust: exact;
-  display: inline-block;
-  vertical-align: middle;
-  background-origin: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  flex-shrink: 0;
-  height: 1rem;
-  width: 1rem;
-  color: #2563eb;
-  background-color: #fff;
-  border-color: #6b7280;
-  border-width: 1px;
-  --tw-shadow: 0 0 #0000;
-}
-
-[type=checkbox]:checked, [type=radio]:checked {
-  border-color: transparent;
-  background-color: currentColor;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-[type=checkbox] {
-  border-radius: 0;
-}
-
-[type=checkbox]:checked {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
 }
 
 $fontWeights: (
@@ -170,42 +116,35 @@ $spacingMults: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
-
-.button--primary {
+.button {
   font-family: Oswald;
   text-transform: uppercase;
-  transition: background-color 0.2s ease-out;
+  transition: font-size 0.3s ease-out, background-color 0.3s ease-out;
   color: white;
   border: none;
-  background-color: var(--gray-600);
   border-radius: calc(var(--spacing-unit));
   padding: calc(1 * var(--spacing-unit));
   cursor: pointer;
   text-align: center;
   font-weight: 500;
-  font-size: 1rem;
   padding: calc(var(--spacing-unit) * 2);
   margin-top: calc(var(--spacing-unit) * 3);
+  font-size: var(--text-sm);
+  @include bpmd {
+    font-size: 1rem;
+  }
+}
+.button--primary {
+  background-color: var(--gray-600);
+  @extend .button;
 }
 .button--primary:hover {
   background-color: var(--gray-700);
 }
 
 .button--accent {
-  font-family: Oswald;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease-out;
-  color: white;
-  border: none;
+  @extend .button;
   background-color: var(--red-500);
-  border-radius: calc(var(--spacing-unit));
-  padding: calc(1 * var(--spacing-unit));
-  cursor: pointer;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1rem;
-  padding: calc(var(--spacing-unit) * 2);
-  margin-top: calc(var(--spacing-unit) * 3);
 }
 .button--accent:hover {
   background-color: var(--red-600);
@@ -221,4 +160,36 @@ $spacingMults: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.column{
+  display:flex;
+  flex-direction: column;
+  flex-basis: 800px;
+  flex-shrink: 1;
+  max-width: 100%;
+  padding-left: var(--spacing-unit);
+  padding-right: var(--spacing-unit);
+  @include bpmd {
+    position: relative;
+    padding-left: 120px;
+    padding-right: 120px;
+    max-width: 800px;
+  }
+}
+
+.title {
+  // transition: font-size .3s ease-out;
+  color: var(--neutral-300);
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  @include bpmd {
+    font-size: 4rem;
+  }
 }
