@@ -2,6 +2,7 @@
 title: Synchronizing Ignition Edge
 description: "Using GitLab CD to Unify the Ignition Edge Panel Experience"
 created: March 17, 2021
+image: "https://res.cloudinary.com/jarautomation/image/upload/c_lpad,f_auto,w_160,h_160/v1615827980/blog/2021-03-15%20Ignition%20Edge%20Synchronization/Ignition_Edge_Synchronization.png"
 ---
 
 Here is one way to keep your Ignition Edge Panel screens synced with a centralized gateway:

@@ -166,7 +166,7 @@ $spacingMults: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
   display: flex;
   justify-content: center;
 }
-.column{
+.column {
   display:flex;
   flex-direction: column;
   flex-basis: 800px;
@@ -183,13 +183,21 @@ $spacingMults: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
 }
 
 .title {
-  // transition: font-size .3s ease-out;
+  transition: margin-top .3s ease-out;
   color: var(--neutral-300);
   font-family: Oswald;
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
+  margin-top: calc(var(--spacing-unit) * 5);
+  margin-bottom: calc(var(--spacing-unit) * 5);
+  @extend .text-xl;
   @include bpmd {
-    font-size: 4rem;
+    font-size: var(--text-7xl);
+    line-height: var(--text-7xl-lh);
+    margin-top: calc(var(--spacing-unit) * 10);
+  }
+  @include bpxl {
+    margin-top: 0px;
   }
 }

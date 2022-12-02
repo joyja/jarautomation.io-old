@@ -11,11 +11,11 @@
         />
       </div>
       <div class="buttons space-x-2">
-        <a class="button--accent button--text-with-symbol">Go to Store
+        <NuxtLink to="/store" class="button--accent button--text-with-symbol">Go to Store
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" height="16px" width="16px">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
           </svg>
-        </a>
+        </NuxtLink>
         <NuxtLink to="/blog" class="button--primary button--text-with-symbol">Go to Blog
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" height="16px" width="16px">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />

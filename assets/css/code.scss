@@ -1,12 +1,21 @@
 @import '~/assets/css/boxShadow.scss';
+@import 'text.scss';
 
 pre {
   background-color: var(--neutral-700);
   border-radius: var(--spacing-unit);
-  padding-top: var(--spacing-unit);
-  padding-bottom: var(--spacing-unit);
+  // padding-top: var(--spacing-unit);
+  // padding-bottom: var(--spacing-unit);
   padding-left: calc(var(--spacing-unit) * 2);
   padding-right: calc(var(--spacing-unit) * 2);
   margin-bottom: calc(var(--spacing-unit) * 3);
-  overflow:scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+code {
+  background-color: var(--neutral-700);
+  border-radius: var(--spacing-unit);
+  @extend .text-xs;
+  padding: 2px;
 }

@@ -10,8 +10,9 @@ const props = defineProps({
       default: null,
     },
     alt: {
-      required: true,
+      required: false,
       type: String,
+      default: null
     },
     flat: {
       required: false,
@@ -26,7 +27,7 @@ const props = defineProps({
     color: {
       required: false,
       type: String,
-      default: 'white',
+      default: 'transparent',
     },
     addClasses: {
       required: false,
@@ -57,7 +58,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="content--img--wrapper">
+  <div :style="{ 'background-color': color }" class="content--img--wrapper">
     <NuxtImg class="content--img" :style="{'flex-basis': basis, 'max-width': '100%' }" :src="src" :placeholder="lazySrc"/>
   </div>
 </template>

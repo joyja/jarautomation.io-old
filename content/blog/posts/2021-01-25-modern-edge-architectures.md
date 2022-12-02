@@ -2,9 +2,10 @@
 title: Modern Edge Architectures
 description: "The power of general purpose hardware and open source software"
 created: July 22, 2021
+image: "https://res.cloudinary.com/jarautomation/image/upload/c_lpad,f_auto,w_160,h_160/v1609275780/architectures/HA%20SCADA.png"
 ---
 
-We've been working with container technology and running industrial applications using the general purpose hardware we sell in our <nuxt-link :to="{ name: 'store' }">store</nuxt-link>. This article is a summary of the architectures we've come acrossed and demonstrates the incredible benefits of using general purpose hardware, container technology, and open source software in control systems.
+We've been working with container technology and running industrial applications using the general purpose hardware we sell in our [store](/store). This article is a summary of the architectures we've come acrossed and demonstrates the incredible benefits of using general purpose hardware, container technology, and open source software in control systems.
 
 ## The Traditional
 Before getting into the more complicated architectures, let's talk about the common case. A lot of our sales has been hardware from our store set up the traditional way. Traditional meaning a computer with a Windows operating system, panel mounted display and HMI software communicating to a separate Programmable Logic Controller (PLC). It makes sense that this would still be the preferred solution. What I'd like to point out is that even with a traditional architecture, the hardware in our store has some remarkable benefits. We've carefully selected what we think is the best edge compute solution for most projects.

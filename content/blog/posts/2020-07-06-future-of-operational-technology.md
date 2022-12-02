@@ -2,9 +2,10 @@
 title: The Future of Operational Technology
 description: "Containerization and an Open Source Stack"
 created: July 6, 2020
+image: 'https://res.cloudinary.com/jarautomation/image/upload/c_lpad,f_auto,w_160,h_160/v1594103000/blog/2020-07-06%20The%20Future%20of%20Operational%20Technology/Modern%20Architecture.png'
 ---
 
-<jar-image basis="1150px" aspect-ratio="1.8" src="https://res.cloudinary.com/jarautomation/image/upload/f_auto/v1594103000/blog/2020-07-06%20The%20Future%20of%20Operational%20Technology/Modern%20Architecture.png" lazy-src="https://res.cloudinary.com/joyautomation/image/upload/e_blur:1000,q_1,f_auto/v1594103000/blog/2020-07-06%20The%20Future%20of%20Operational%20Technology/Modern%20Architecture.png" alt="Architecture Diagram"></jar-image>
+<jar-image basis="1150px" aspect-ratio="1.8" src="https://res.cloudinary.com/jarautomation/image/upload/f_auto/v1594103000/blog/2020-07-06%20The%20Future%20of%20Operational%20Technology/Modern%20Architecture.png" lazy-src="https://res.cloudinary.com/jarautomation/image/upload/e_blur:1000,q_1,f_auto/v1594103000/blog/2020-07-06%20The%20Future%20of%20Operational%20Technology/Modern%20Architecture.png" alt="Architecture Diagram"></jar-image>
 
 I am a firm believer that operational technology could benefit from the responsible application of modern open source technology. We've made a lot of progress when it comes to networking and virtualization environments, but I believe there is a huge opportunity in leveraging open source internet application development and deployment technology too. In the near future, I hope we can do away with the engineering limitations of over-priced software licenses and start creating systems that are truly robust.
 

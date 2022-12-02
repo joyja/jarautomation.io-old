@@ -1,7 +1,8 @@
 ---
 title: Public Facing Ignition
 description: "Using DigitalOcean, Ubuntu, LXD and NGINX"
-image: "https://res.cloudinary.com/joyautomation/image/upload/c_lpad,f_auto,w_150,h_150/v1561924770/2019-06-09-public-facing-ignition/main.png"
+image: "https://res.cloudinary.com/joyautomation/image/upload/c_lpad,f_auto,w_162,h_162/v1561924770/2019-06-09-public-facing-ignition/main.png"
+imageColor: "#002256"
 created: June 9, 2019
 ---
 
@@ -39,7 +40,7 @@ SSH key for your SSH client of choice and upload it here. However, if
 you want to simply access the droplet from the web console, feel free to
 ignore me.
  
-If you're using the SSH client in Ubuntu you can follow [this guide]("https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/), but here's the brief version. Run 
+If you're using the SSH client in Ubuntu you can follow [this guide](https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/), but here's the brief version. Run 
 
 ```shell
 ssh-keygen
@@ -490,7 +491,9 @@ internet a better place by providing free SSL certificates and tools
 that makes it easy to renew them. Because they make it easy and free,
 certificates can be renewed more often.
 
-<jar-alert></jar-alert>
+::jar-alert
+To do this part you'll need to own a domain with an A record pointing to the public IP address of the DigitalOcean droplet. For example, I'm using <code>ignition.jarautomation.io</code>
+::
 
 If you're familiar with Ignition, you may be wondering why we don't just
 install the SSL certificates on the gateway and use that. We totally
